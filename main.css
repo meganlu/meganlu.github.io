@@ -1,0 +1,105 @@
+h1, h2, p, h3  {
+  font-family: Arial, sans-serif;
+}
+p {
+  font-size: 16px;
+  color:rgb(108, 108, 108)
+}
+
+/******* MEDIA ********/
+.project {
+  padding: 80px;
+  padding-top: 0px;
+  padding-right: 0px;
+  overflow:auto; /*encompass video and text*/
+}
+video {
+  width: 60%;
+  border-radius: 20px;
+  float: left;
+}
+.description {
+  width: 30%;
+  float: left;
+  padding-left: 50px;
+}
+
+
+
+/******* MENU ********/
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  width: 100%;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+  animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+
+.tab ul { 
+  margin: 0 auto; 
+  padding: 0; 
+  list-style: none; 
+  display: table;
+  margin-right: 50px;
+}
+.tab li { 
+  display: table-cell; 
+  position: relative; 
+  padding: 15px 0;
+}
+
+.tab a {
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  font-size: medium;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+  font-family: Arial, sans-serif;
+}
+
+.tab a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: rgb(0, 0, 0);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.tab a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
