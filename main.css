@@ -11,10 +11,51 @@ li {
   color: #7d6a80;
 }
 
+#name {
+  /* white-space: nowrap;
+  overflow: hidden;
+  animation: typewriter 2s steps(8),
+          blink 1s steps(8);
+  border-right: 3px solid #a99aab; */
+
+  font-family: Tahoma, sans-serif; 
+  font-size: 80px; 
+  text-align: justify; 
+  color: white; 
+  margin-bottom: 0; 
+}
+@keyframes typewriter {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 85%;
+  }
+}
+@keyframes blink {
+  from {
+    border-color: #7d6a80;
+  }
+  to {
+    border-color: transparent;
+  }
+}
+#home-left {
+  flex: left; 
+  padding: 0 2% 0 6%;
+  /* background-color: #ddd3df ;
+  border-radius: 2em;
+  margin-top: 2em;
+  margin-left: -2em;
+  height: fit-content;
+  box-shadow: 3px 6px 10px #cbbecd; */
+}
+
 #links {
   margin-top: 2em;
   height: fit-content;
   display: flex;
+  margin-bottom: 3em;
 }
 
 .buttonlink {
