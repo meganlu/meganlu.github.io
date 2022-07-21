@@ -1,13 +1,62 @@
 h1, h2, p, h3  {
   font-family: Arial, sans-serif;
+  color: #49404a
 }
 p {
   font-size: 16px;
-  color:rgb(108, 108, 108)
+  color:rgb(99, 93, 96)
 }
 
+li {
+  color: #7d6a80;
+}
+
+#links {
+  margin-top: 2em;
+  height: fit-content;
+  display: flex;
+}
+
+.buttonlink {
+  background-color: #7d6a80;
+  padding: 0.4em 1em 0.5em 1em;
+  border-radius: 2em;
+  margin-right: 0.5em;
+  
+  color: white;
+  font-family: Tahoma;
+  font-weight: bold; 
+  font-size: 18px;
+  text-decoration: none;
+}
+
+#ghostgithub, #nutcrackergithub {
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.buttonlink:hover {
+  background-color: #908292;
+}
+
+.logolink {
+  background-color: transparent;
+  border: none;
+  padding: 0.5em 0.4em 0.3em 0.4em ;
+  border-radius: 0.3em;
+  text-decoration: none;
+}
+.logolink:hover{
+  background-color: #e6dfe8;
+}
+
+/* #github {
+  padding: 0.45em 0.5em 0.4em 0.55em;
+} */
+
 /******* MEDIA ********/
-.project {
+.anim-project {
   padding: 80px;
   padding-top: 0px;
   padding-right: 0px;
@@ -18,13 +67,59 @@ video {
   border-radius: 20px;
   float: left;
 }
-.description {
+.anim-description {
   width: 30%;
   float: left;
   padding-left: 50px;
 }
 
+.code-project {
+  margin: 2em 6em 2em 6em;
+  padding: 2em 3em 2em 3em;
+  border-radius: 2em;
+  overflow:auto; /*encompass video and text*/
+  background-color: #f2eff9;
+}
 
+.code-description {
+  width: 45%;
+  float: left;
+  padding-right: 2em;
+}
+
+#styletransfervideo {
+  width: 50%; 
+  float: right;
+}
+
+.code-project-mini-wrapper {
+  display: flex;
+  margin: 2em 6em 2em 6em;
+}
+.code-project-mini {
+  padding: 2em 3em 2em 3em;
+  border-radius: 2em;
+  overflow:auto; /*encompass video and text*/
+  background-color: #f2eff9;
+  flex: left;
+  width: 50%;
+}
+
+#shreddify {
+  margin-right: 2em;
+}
+
+#ghostplaypic, #nutcrackerplaypic {
+  width: 50%;
+}
+
+#artstation {
+  margin-top: 2em;
+}
+
+#artstationlink {
+  margin-bottom: 2em;
+}
 
 /******* MENU ********/
 
@@ -32,6 +127,7 @@ video {
 .tab {
   overflow: hidden;
   width: 100%;
+  margin-top: 1em;
 }
 
 /* Style the buttons that are used to open the tab content */
@@ -41,7 +137,7 @@ video {
   border: none;
   outline: none;
   cursor: pointer;
-  padding: 14px 16px;
+  padding: 4px 6px;
   transition: 0.3s;
 }
 
@@ -49,7 +145,7 @@ video {
 /* Style the tab content */
 .tabcontent {
   display: none;
-  padding: 6px 12px;
+  padding: 3px 6px;
   border-top: none;
   animation: fadeEffect 1s; /* Fading effect takes 1 second */
 }
@@ -66,7 +162,7 @@ video {
   padding: 0; 
   list-style: none; 
   display: table;
-  margin-right: 50px;
+  margin-right: 4em;
 }
 .tab li { 
   display: table-cell; 
@@ -75,13 +171,15 @@ video {
 }
 
 .tab a {
-  color: rgb(0, 0, 0);
+  color: #7d6a80;
   text-transform: uppercase;
-  font-size: medium;
+  font-family: Verdana, sans-serif;
+  font-weight: bold;
+  font-size: 1em;
   text-decoration: none;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.1em;
   display: inline-block;
-  padding: 15px 20px;
+  padding: 10px 15px;
   position: relative;
   font-family: Arial, sans-serif;
 }
@@ -94,7 +192,7 @@ video {
   height: 2px;
   left: 50%;
   position: absolute;
-  background: rgb(0, 0, 0);
+  background: #7d6a80;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }

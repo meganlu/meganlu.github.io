@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<!DOCTYPE html>
+  <html>
+    <head>
+      <link rel="stylesheet" type="text/css" href="main.css"/>
+      <script src="home.js"></script>
+    </head>
+    <body  style="background-color:#e6e1f2;">
+        <!-- Tab links -->
+        <div class="tab">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="code.html">Code</a></li>
+            <li><a href="animation.html">Animation</a></li>
+            <li><a href="art.html">Art</a></li>
+          </ul>
+        </div>
+
+        <h1 style="margin-left:85px; font-size: 40px; padding:20px;">Coding</h1>
+        
+        <div class="code-project">
+          <div class="code-description">
+            <h1>Ghibli Neural Style Transfer</h1>
+            <p><i>May 2022 · Python · Team</i></p>
+            <p>A neural style transfer program that converts Studio Ghibli-style movie clips into the art style of any image input, completing the conversion frame-by-frame and assembling a final clip. </p>
+          </div>
+          <video id="styletransfervideo" controls>Your browser does not support the &lt;video&gt; tag.
+            <source src="code/styletransfer.mp4"/>
+          </video>
+        </div>
+        <div class="code-project-mini-wrapper">
+          <div class="code-project-mini" id="shreddify" >
+            <div class="code-description-mini">
+              <h1>Shreddify</h1>
+              <p><i>May 2021 · Java/SQL & React/JS/CSS · Team</i></p>
+              <p>Fitness app featuring: </p>
+              <ul>
+                <li>
+                  <p>Recommendation system that suggests optimal workouts based on user’s preferences (energy level, time available, target muscles, etc.) and fitness history.</p>
+                </li>
+                <li>
+                  <p>Protected user accounts with profiles tracking previous workouts, workout preferences, fitness level, and fitness achievements.</p>
+                </li>
+                <li>
+                  <p>Live workout interface with per-exercise timers, descriptions, etc.</p>
+                </li>
+                <li>
+                  <p>Explore page with new workouts catered to user's fitness history.</p>
+                </li>
+              </ul>
+            </div>  
+          </div>
+          <div class="code-project-mini" >
+            <div class="code-description-mini">
+              <h1>Maps</h1>
+              <p><i>March 2021 · Java/SQL & JS/HTML/CSS · Team</i></p>
+              <p>An interactive map of Rhode Island (displaying buildings, highways, and streets) that allows users to:</p> 
+              <ul>
+                <li>
+                  <p>Find most efficient route between two world coordinate locations clicked on the map or two street intersections. Implemented through A* search algorithm.</p>
+                </li>
+                <li>
+                  <p>Find nearest node (street intersection or notable coordinate) after clicking on a location on the map. Implemented through nearest-neighbor search algorithm.</p>
+                </li>
+              </ul>
+              <p>Uses caching to allow for efficient storage and loading of map areas during zooming and panning.</p>
+            </div>  
+          </div>
+        </div>
+        <div class="code-project">
+          <div class="code-description">
+            <h1>A Ghost in a Graveyard</h1>
+            <p><i>May 2022 · Lua/LÖVE · Individual</i></p>
+            <p>An atmospheric side-scrolling game that gets progressively faster and more difficult with new obstacles being introduced. All backgrounds, sprites, animations were designed and illustrated with Adobe Suite.</p>
+            <a class="buttonlink" id="ghostgithub" href="https://github.com/meganlu/ghost-in-the-graveyard" target="_blank" >Github</a>
+          </div>
+          <img src="code/ghostplay.png" id="ghostplaypic" alt="Ghost Gameplay" >
+        </div>
+        <div class="code-project">
+          <div class="code-description">
+            <h1>Nutcracker</h1>
+            <p><i>May 2022 · Lua/LÖVE · Individual</i></p>
+            <p>A block-breaking and match-3 inspired puzzle game with increasingly difficult levels and score-saving for multiple players. Designed and illustrated all backgrounds, sprites, and game interfaces in Adobe Suite. </p>
+            <a class="buttonlink" id="nutcrackergithub" href="https://github.com/meganlu/nutcracker" target="_blank" >Github</a>
+          </div>
+          <img src="code/nutcrackerplay.png" id="nutcrackerplaypic" alt="Nutcracker Gameplay" >
+        </div>
+
+    </body>
+</html>
+ 
