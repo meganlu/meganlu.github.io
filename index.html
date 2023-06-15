@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<!DOCTYPE html>
+  <html>
+    <head>
+      <link rel="stylesheet" type="text/css" href="main.css"/>
+      <link rel="icon" href="art/animalcrossingclear.png">
+      <script src="home.js"></script>
+    </head>
+    <body  style="background-color:#dbc9de" oncontextmenu="return false">
+        <!-- Tab links -->
+        <div class="tab">
+          <ul>
+            <li><a href="https://meganlu.github.io" >Home</a></li>
+            <li><a href="https://meganlu.github.io/code" >Code</a></li>
+            <li><a href="https://meganlu.github.io/animation" >Animation</a></li>
+            <li><a href="https://meganlu.github.io/art" >Art</a></li>
+            <li><a href="https://meganlu.github.io/music" >Music</a></li>
+          </ul>
+
+        </div>
+
+        <div style="display: flex;">
+          <div id="home-left">
+            <h1 id="name" > Megan Lu </h1>
+            <h4 style="font-family: Arial, sans-serif; font-size: 18px; text-align: left; line-height: 1.5em; color: #7d6a80;"> 
+              Hello! I'm a senior at Brown University studying computer science and visual art. 
+              Beyond general software engineering, I'm also interested in areas of computer science that intersect with the arts, such as computer animation, game development, frontend development, and UI/UX design.
+            </h4>
+            <div id="links">
+              <!--href="files/MeganLu_Resume.pdf" target="_blank"-->
+              <a class="buttonlink" id="resume" href="files/MeganLu_Resume.pdf" target="_blank" >Resume</a>
+              <a class="logolink" id="github" href="https://github.com/meganlu" target="_blank" >
+                <img src="files/githublogo.png" style="width: 1.5em; margin: none; padding: none;"alt="Github Logo" >
+              </a>
+              <a class="logolink" id="linkedin" href="https://www.linkedin.com/in/meganjl/" target="_blank" >
+                <img src="files/linkedinlogo.png" style="width: 1.5em; margin: none; padding: none;"alt="LinkedIn Logo" >
+              </a>
+            </div>
+          </div>
+          <div  style="flex: left; padding-top: 3%;" >
+            <img src="art/animalcrossingclear.png" alt="Homepage Art" style="width: 85%; align-self: center; opacity: 0.9;" >
+          </div>
+        </div>
+
+        
+        <script>
+          document.getElementById("resume").addEventListener("click", enterPassword);
+          function enterPassword() {
+            // console.log('in enterPassword');
+            // var password = window.prompt("Enter password: ","");
+            // if (password == "pickles") {
+            //   window.open("files/MeganLu_Resume.pdf", "_blank");
+            // } else {
+            //   alert("Incorrect password");
+            // }
+            window.open("files/MeganLu_Resume.pdf", "_blank");
+          }
+          document.onkeydown = function(e) {
+            if(event.keyCode == 123) {
+              return false;
+            }
+            if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+              return false;
+            }
+            if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+              return false;
+            }
+            if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+              return false;
+            }
+            if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+              return false;
+            }
+            if(e.ctrlKey && e.keyCode == 'I'.charCodeAt(0)) {
+              return false;
+            }
+          }
+        </script>
+
+    </body>
+</html>
+ 
