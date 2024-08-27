@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<!DOCTYPE html>
+  <html>
+    <head>
+      <link rel="stylesheet" type="text/css" href="main.css"/>
+      <link rel="icon" href="art/animalcrossingclear.png">
+      <script src="home.js"></script>
+    </head>
+    <body  style="background-color:#e6e1f2;" oncontextmenu="return false">
+        <!-- Tab links -->
+        <div class="tab">
+          <ul>
+            <li><a href="https://meganlu.github.io" >Home</a></li>
+            <li><a href="https://meganlu.github.io/animation" >Animation</a></li>
+            <li><a href="https://meganlu.github.io/art" >Art</a></li>
+            <li><a href="https://meganlu.github.io/code" >Code</a></li>
+            <li><a href="https://meganlu.github.io/games" >Games</a></li>
+            <li><a href="https://meganlu.github.io/music" >Music</a></li>
+          </ul>
+        </div>
+
+        <h1 id="animation">Games</h1>
+
+        <div class="anim-project">
+            <video controls poster="games/enchantedforest_thumb.png">Your browser does not support the &lt;video&gt; tag.
+                <source src="games/enchantedforest.mp4"/>
+            </video>
+            <div class="anim-description">
+              <h1>Twilight in the Enchanted Forest</h1>
+              <p><i>November 2023 · Unity/C#/Reaper · Individual</i></p>
+              <p>A 3D first-person adventure where you play as a lost traveller navigating a misty forest, designed as an intro sequence for a longer game.</p>
+              <p>A major goal was to explore atmospheric sound design with Reaper and Unity. The outcome features 3D audio for various terrain, an ambient forest soundscape, and sound effects for props and player movements.</p>
+              <p>I also aimed to design a visually immersive environment - inviting the player to explore while also preserving the mystery of the forest.</p>
+            </div>
+        </div>
+        <div class="code-project">
+          <div class="code-description">
+            <h1>A Ghost in a Graveyard</h1>
+            <p><i>May 2022 · Lua/LÖVE · Individual</i></p>
+            <p>An atmospheric side-scrolling game that increases in speed and difficulty with new obstacles being introduced. I used Adobe Suite to illustrate all the graphics and used Audacity for sound design. </p>
+            <a class="buttonlink" id="ghostgithub" href="https://github.com/meganlu/ghost-in-the-graveyard" target="_blank" >Github</a>
+          </div>
+          <img src="code/ghostplay.png" id="ghostplaypic" alt="Ghost Gameplay" >
+        </div>
+        <div class="code-project">
+          <div class="code-description">
+            <h1>Nutcracker</h1>
+            <p><i>May 2022 · Lua/LÖVE · Individual</i></p>
+            <p>A block-breaking and match-3 puzzle game featuring progressive levels and multiplayer score-saving. I used Adobe Suite to illustrate all the graphics and used Audacity for sound design. </p>
+            <a class="buttonlink" id="nutcrackergithub" href="https://github.com/meganlu/nutcracker" target="_blank" >Github</a>
+          </div>
+          <img src="code/nutcrackerplay.png" id="nutcrackerplaypic" alt="Nutcracker Gameplay" >
+        </div>
+        <script>
+          document.onkeydown = function(e) {
+              if(event.keyCode == 123) {
+                return false;
+              }
+              if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+                return false;
+              }
+              if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+                return false;
+              }
+              if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+                return false;
+              }
+              if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+                return false;
+              }
+            }
+        </script>
+    </body>
+</html>
+ 
